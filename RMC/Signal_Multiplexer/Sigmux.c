@@ -1557,7 +1557,7 @@ uint8_t Decrypt_Data(unsigned char * Data)
 	}//End if
 
 	//If we are not in RC Mode then don't process the rest of the command.
-	if (Current_Mode != RC_MODE)
+	if (Current_Mode != RC_Mode)
 	{
 		return 2;	
 	}//End if
@@ -1907,7 +1907,6 @@ uint8_t Decrypt_Data(unsigned char * Data)
 			Output_Command[9]	= '\r';
 			Size 			= 10;
 		break;			
-
 		//Manual E-GO:
 		case 192:
                        	Select_Motor_Controller(1);
